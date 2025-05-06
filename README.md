@@ -1,49 +1,61 @@
-# 🧠 Handwritten Digit Recognition
+# 🧠 Handwritten Digit '2' Classifier
 
-This project demonstrates a machine learning model that recognizes handwritten digits (0–9) using the MNIST dataset. It’s a beginner-friendly project to understand neural networks and image classification.
+This project demonstrates a machine learning model that detects whether a handwritten digit is a **2** or not, using the MNIST dataset. It’s perfect for beginners to understand binary classification, model evaluation, and logistic regression.
 
 ## 📌 Features
 
 - Trained on the MNIST dataset
-- Uses a neural network for digit classification
-- Simple and clean implementation in Python
-- Great for beginners in ML and AI
+- Uses Logistic Regression (not neural networks)
+- Focuses on binary classification: "Is it a 2?"
+- Evaluates performance with confusion matrix and precision/recall
+- Clean and beginner-friendly implementation in Python
 
 ## 🛠️ Tech Stack
 
 - Python 🐍  
 - NumPy  
-- TensorFlow / Keras (or PyTorch if you used it)  
-- Matplotlib (for visualizing results)  
+- scikit-learn  
+- Matplotlib (for visualizing confusion matrix)  
 
 ## 🚀 How It Works
 
-1. Load the MNIST dataset (images + labels)
+1. Load the MNIST dataset using `fetch_openml`
 2. Normalize and preprocess the data
-3. Train a neural network model
-4. Evaluate model accuracy
-5. Predict digits from test images
+3. Convert labels into binary (`2` vs. not `2`)
+4. Train a logistic regression model
+5. Evaluate using:
+   - Cross-validation
+   - Confusion matrix
+   - Precision, Recall, F1 Score
 
-## 🖼️ Sample Output
+## 📊 Sample Output
 
-> Include sample prediction screenshots or console output if available  
-> Example:  
-> `Predicted: 7 | Actual: 7 ✅`  
+> Example:
+> ```
+> Accuracy: 97.5%
+> Confusion Matrix:
+> [[True Negatives, False Positives],
+>  [False Negatives, True Positives]]
+> ```
 
-📚 Dataset
-MNIST Handwritten Digit Dataset
+(You can add a screenshot of your confusion matrix plot here!)
 
-🤖 Future Ideas
-Build a web interface using Flask or Streamlit
+## 📚 Dataset
 
-Deploy model online
+MNIST Handwritten Digit Dataset (via `sklearn.datasets.fetch_openml`)
 
-Try with your own handwritten images
+## 🤖 Future Ideas
 
-🙌 Contributing
+- Try other classifiers like SVM, Random Forest, or MLP  
+- Add a precision-recall or ROC curve  
+- Build a web demo with Flask or Streamlit  
+- Extend to full 0–9 multiclass classification  
+
+## 🙌 Contributing
+
 Feel free to fork the repo and improve it! Pull requests are welcome.
 
-📩 Contact
-Created with ❤️ by Dev Goel
-Reach out on Instagram: @404Dev.NotFound
+## 📩 Contact
 
+Created with ❤️ by **Dev Goel**  
+Instagram: [@404Dev.NotFound](https://instagram.com/404Dev.NotFound)
