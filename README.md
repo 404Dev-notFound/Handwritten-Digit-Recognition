@@ -44,7 +44,12 @@ This project demonstrates a machine learning model that detects whether a handwr
 
 MNIST Handwritten Digit Dataset (via `sklearn.datasets.fetch_openml`)
 
+## 🤖 Future Ideas
 
+- Try other classifiers like SVM, Random Forest, or MLP  
+- Add a precision-recall or ROC curve  
+- Build a web demo with Flask or Streamlit  
+- Extend to full 0–9 multiclass classification  
 
 ## 🙌 Contributing
 
