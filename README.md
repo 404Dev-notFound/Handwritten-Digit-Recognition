@@ -1,3 +1,4 @@
+
 # 🧠 Handwritten Digit '2' Classifier
 
 This project demonstrates a machine learning model that detects whether a handwritten digit is a **2** or not, using the MNIST dataset. It’s perfect for beginners to understand binary classification, model evaluation, and logistic regression.
